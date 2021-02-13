@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "originsvoidends",
+  "version": "${version}",
+
+  "name": "Origin: Void Ends",
+  "description": "Additional of Origins!",
+  "authors": [
+    "FireMuffin303"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/originsvoidends/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.firemuffin303.originsvoidends.OriginsVoidEnds"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

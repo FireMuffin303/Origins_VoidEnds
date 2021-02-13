@@ -1,0 +1,11 @@
+{
+  "type": "origins:fire_projectile",
+  "cooldown": 600,
+  "hud_render": {
+    "bar_index": 6
+  },
+  "entity_type": "originsvoidends:dragonian_fireball",
+  "sound": "minecraft:entity.ender_dragon.shoot",
+  "speed": 0.5,
+  "divergence": 1
+}

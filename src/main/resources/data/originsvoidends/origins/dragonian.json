@@ -1,0 +1,9 @@
+{
+  "power": [
+    "originsvoidends:muscular",
+    "originsvoidends:fire_dragon_fireball"
+  ],
+  "icon": "minecraft:dragon_head",
+  "order": 1,
+  "impact": 1
+}
