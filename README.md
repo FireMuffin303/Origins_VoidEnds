@@ -9,7 +9,7 @@
 - \[+\] Hard Scales : Have 2 armors and 2 armors toughness without any armors.
 - \[-\] Large Stomach : All food halves by 2.
 - \[-\] Slow Movement : Walk slightly slower than humans.
-- \[-\] Explosion damage deals double damage to you.
+- \[-\] Unnamed : Explosion damage deals double damage to you.
 
 **Illager**
 - \[+\] Ravenger Trust : Can tame Ravengers and ride it.
