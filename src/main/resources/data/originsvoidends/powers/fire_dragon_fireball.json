@@ -4,7 +4,7 @@
   "hud_render": {
     "bar_index": 6
   },
-  "entity_type": "originsvoidends:dragonian_fireball",
+  "entity_type": "originsvoidends:dragonic_fireball",
   "sound": "minecraft:entity.ender_dragon.shoot",
   "speed": 0.5,
   "divergence": 1
