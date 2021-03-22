@@ -11,4 +11,5 @@ public class OriginsVoidEnds implements ModInitializer {
     public void onInitialize() {
         OVEEntities.init();
     }
+
 }

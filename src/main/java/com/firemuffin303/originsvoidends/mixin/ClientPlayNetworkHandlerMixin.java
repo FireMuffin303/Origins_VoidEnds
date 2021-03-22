@@ -10,6 +10,7 @@ import net.minecraft.client.network.ClientPlayNetworkHandler;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.projectile.DragonFireballEntity;
 import net.minecraft.entity.projectile.ExplosiveProjectileEntity;
 import net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket;
 import net.minecraft.util.math.Vec3d;
@@ -22,9 +23,11 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 @Environment(EnvType.CLIENT)
 @Mixin({ClientPlayNetworkHandler.class})
-public class OVEClientPlayNetworkHandlerMixin {
+public class ClientPlayNetworkHandlerMixin {
     @Shadow
     private ClientWorld world;
+    public ClientPlayNetworkHandlerMixin() {
+    }
 
 
     @Inject(
@@ -36,7 +39,7 @@ public class OVEClientPlayNetworkHandlerMixin {
     private void onEntitySpawn(EntitySpawnS2CPacket packet, CallbackInfo ci, double x, double y, double z,double directionX, double directionY , double directionZ, EntityType<? extends  ExplosiveProjectileEntity> type) {
         Entity entity = null;
         if (type == OVEEntities.DRAGONIAN_FIREBALL) {
-            entity = new DragonianFireBallEntity(type,x, y, z,directionX,directionY,directionZ,this.world);
+            entity = new DragonFireballEntity(this.world, x, y, z, packet.getVelocityX(), packet.getVelocityY(), packet.getVelocityZ());
         }
         if (entity != null) {
             int i = packet.getId();

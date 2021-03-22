@@ -9,7 +9,6 @@ import net.minecraft.client.render.entity.EntityRenderDispatcher;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.client.util.math.Vector3f;
-import net.minecraft.entity.projectile.DragonFireballEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Matrix3f;
@@ -30,7 +29,7 @@ public class DragonianFireBallEntityRenderer extends EntityRenderer<DragonianFir
 
     public void render(DragonianFireBallEntity dragonianFireBallEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
         matrixStack.push();
-        matrixStack.scale(2.0F, 2.0F, 2.0F);
+        matrixStack.scale(1.0F, 1.0F, 1.0F);
         matrixStack.multiply(this.dispatcher.getRotation());
         matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
         MatrixStack.Entry entry = matrixStack.peek();

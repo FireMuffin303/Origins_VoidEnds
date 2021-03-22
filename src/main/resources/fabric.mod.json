@@ -10,7 +10,7 @@
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/FireMuffin303/Origins_VoidEnds"
   },
 
   "license": "CC0-1.0",
@@ -20,9 +20,13 @@
   "entrypoints": {
     "main": [
       "com.firemuffin303.originsvoidends.OriginsVoidEnds"
+    ],
+    "client": [
+      "com.firemuffin303.originsvoidends.OriginsVoidEndsClient"
     ]
   },
   "mixins": [
+    "originsvoidends.mixins.json"
   ],
 
   "depends": {

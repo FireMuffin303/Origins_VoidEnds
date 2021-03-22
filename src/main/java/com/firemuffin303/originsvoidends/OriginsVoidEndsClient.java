@@ -14,6 +14,6 @@ public class OriginsVoidEndsClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         EntityRendererRegistry.INSTANCE.register(OVEEntities.DRAGONIAN_FIREBALL,
-                ((entityRenderDispatcher, context) -> new DragonianFireBallEntityRenderer(entityRenderDispatcher)));
+                (entityRenderDispatcher, context) -> new DragonianFireBallEntityRenderer(entityRenderDispatcher));
     }
 }
